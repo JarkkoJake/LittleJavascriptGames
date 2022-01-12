@@ -1,0 +1,68 @@
+#wrapper {
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+
+header {
+    height:100px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
+#play {
+    width: 75px;
+    height: 75px;
+    border: 2px solid grey;
+    margin: 10px;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#score {
+    color: white;
+    font-size: 60px;
+}
+
+#gamescreen {
+    background: linear-gradient(#b0b0ff, #fafafa);
+    height:600px;
+    position:relative;
+    overflow:hidden;
+}
+
+#countdown {
+    background-color: #00000050;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#countdownnum {
+    color: white;
+    font-size: 50px;
+}
+.green {
+    position: absolute;
+    background-color: forestgreen;
+}
+.red {
+    background-color: red;
+    position: absolute;
+}
+@keyframes flashing {
+    50% {
+        background-color: white;
+    }
+
+    100%{
+        background-color: red;
+    }
+}

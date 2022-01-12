@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(black, white);
+	background-repeat: no-repeat;
+	width: 800px;
+}
+#wrapper{
+	justify-content: center;
+	display:flex;
+}
+main {
+	position: relative;
+}
+header {
+	display: none;
+	height: 110px;
+	width: 100%;
+	background-color: #10101055
+}
+#score {
+	display: inline-block;
+	background-color: grey;
+	height: 50px;
+	width: 370px;
+	margin: auto;
+	border: 2px solid lightgrey;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+#time {
+	display: inline-block;
+	background-color: grey;
+	height: 50px;
+	width: 370px;
+	margin: auto;
+	border: 2px solid lightgrey;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+#reset {
+	display: inline-block;
+	background-color: grey;
+	height: 50px;
+	width: 370px;
+	margin: auto;
+	margin-top: 6px;
+	border: 2px solid lightgrey;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+#menu {
+	display: inline-block;
+	background-color: grey;
+	height: 50px;
+	width: 370px;
+	margin: auto;
+	margin-top: 6px;
+	border: 2px solid lightgrey;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+#reset:hover, #menu:hover {
+	background-color: lightgrey;
+}
+.tile {
+	width: 200px;
+	height: 200px;
+	margin: 0px;
+	display: inline-block;
+	background-color: white;
+	border: 2px solid black;
+	animation-duration: 0.5s;
+}
+#start_button {
+	border: 2px solid lightgrey;
+	margin: 5px;
+	height: 60px;
+	width: 300px;
+	font-size: 50px;
+	color: white;
+	background-color: darkgray;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 0px;
+}
+#start_button:hover{
+	background-color: lightgrey;
+}
+#options_button {
+	border: 2px solid lightgrey;
+	margin: 5px;
+	height: 60px;
+	width: 300px;
+	font-size: 50px;
+	color: white;
+	background-color: darkgray;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 0px;
+}
+#options_button:hover{
+	background-color: lightgrey;
+}
+#hiscores_button {
+	border: 2px solid lightgrey;
+	margin: 5px;
+	height: 60px;
+	width: 300px;
+	font-size: 50px;
+	color: white;
+	background-color: darkgray;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 0px;
+}
+#hiscores_button:hover{
+	background-color: lightgrey;
+}
+#gameover {
+	height: 100px;
+	width: 100%;
+	background-color: #20202050;
+	position: absolute;
+	top: 0px;
+	font-size: 60px;
+	text-shadow: 2px 2px #000000;
+	color: white;
+	text-align: center;
+}
+
+/*OPTIONS*/
+
+#backtomenu {
+	border: 2px solid lightgrey;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	width: 300px;
+	font-size: 50px;
+	color: white;
+	background-color: darkgray;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 0px;
+	position: relative;
+}
+#backtomenu:hover{
+	background-color: lightgrey;
+}
+.minusButton {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	z-index:2;
+}
+.plusButton {
+	left:300px;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+	color: white;
+	font-size: 100px;
+	text-align: center;
+}
+.onOffButton {
+	left:260px;
+	padding-top: 20px;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+.plusButton:hover, .minusButton:hover, .onOffButton:hover {
+	background-color: lightgrey;
+}
+#timeLabel, #clicksLabel, #gridSizeLabel, #backtomenuLabel, #redTileLabel{
+	left:100px;
+	position: absolute;
+	top: 0px;
+	height:100px;
+	width:200px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+#redTileLabel{
+	left: 40px;
+}
+#timeSelection, #clicksSelection, #gridSizeSelection, #backtomenuSelection, #scoreMultiplier, #redTileSelection{
+	height: 120px;
+	position: relative;
+	width:400px;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+
+@keyframes score {
+	0% {background-color:green;}
+	0% {background-color:green;}
+	100% {background-color: white;}
+}
